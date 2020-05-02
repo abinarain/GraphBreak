@@ -40,7 +40,7 @@ To load Python 3.7.3 using module: module load python/3.7.3
 
 Sample data provided for the purpose small1976.txt (this has been picked up from R database), GTExHead2000Artery_Aorta.v7.signif_variant_gene_pairs.txt (This is the top 2000 genomic variants to Gene expression significant association from the GTEx V7 file that is publicly available to download from their portal).
 
-#Usage: python programName NumberbelowwhichToColorDifferently spaceDelimitedDataFileWithColumnNames column1Name column2Name NumberOfParallelCoresOpenMP
+#Usage: python programName NumberbelowwhichToColorDifferently spaceDelimitedDataFileWithColumnNames column1Name column2Name NumberOfParallelCoresOpenMPI
 
  Example: python3 bipartiteLinearKit.py 2 small1976.txt pollinator plant 2
           #For generating cluster without any bipartite plot (to save tremendous amount of time)
