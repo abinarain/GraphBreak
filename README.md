@@ -1,7 +1,7 @@
 # ReGen
 ## Regulatory Gene Network Analysis Toolkit 
 
-Download via Git: git clone https://github.com/abinarain/ReGen.git
+Download via Git: git clone https://github.com/abinarain/GraphBreak
 
 #CopyRight: This software tool is a copyright of the author. Please take permission before use or modification. License of use is as per MIT License agreement.
 
