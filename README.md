@@ -11,7 +11,7 @@ Download via Git: git clone https://github.com/abinarain/ReGen.git
 
 #Organization affiliation: A.I. Virtanen Institute for Molecular Sciences, University of Eastern Finland, Kuopio, Finland
 
-Dependencies: OS - Linux, Python 3.7.3, OpenMP, Additional Python Modules needed to be installed: networkx, matplotlib and networkit
+Dependencies: OS - Linux, Python 3.7.3, OpenMPI, Additional Python Modules needed to be installed: networkx, matplotlib and networkit
 
 Install cython, sklearn, seaborn and cmake which are Networkit dependencies:
 sudo apt install cmake
