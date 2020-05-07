@@ -11,7 +11,8 @@ Download via Git: git clone https://github.com/abinarain/GraphBreak
 
 #Organization affiliation: A.I. Virtanen Institute for Molecular Sciences, University of Eastern Finland, Kuopio, Finland
 
-Dependencies: OS - Linux, Python 3.7.3, OpenMPI, Additional Python Modules needed to be installed: networkx, matplotlib and networkit
+Dependencies: OS - Linux, Python 3.7.3, OpenMP, Additional Python Modules needed to be installed: networkx, matplotlib and networkit
+
 
 Install cython, sklearn, seaborn and cmake which are Networkit dependencies:
 sudo apt install cmake
@@ -35,12 +36,15 @@ To install matplotlib: pip3 install --user matplotlib
 
 To load Python 3.7.3 using module: module load python/3.7.3
 
-
+Note - If openMP is not available then MPI and Tabulate can also be used 
+sudo apt install libopen mpi-dev
+sudo pip3 install mpi4py
+pip3 install --user tabulate
 ## For Louvaine Algorithm Parallel implementation detecting communities:
 
 Sample data provided for the purpose small1976.txt (this has been picked up from R database), GTExHead2000Artery_Aorta.v7.signif_variant_gene_pairs.txt (This is the top 2000 genomic variants to Gene expression significant association from the GTEx V7 file that is publicly available to download from their portal).
 
-#Usage: python programName NumberbelowwhichToColorDifferently spaceDelimitedDataFileWithColumnNames column1Name column2Name NumberOfParallelCoresOpenMPI
+#Usage: python programName NumberbelowwhichToColorDifferently spaceDelimitedDataFileWithColumnNames column1Name column2Name NumberOfParallelCoresOpenMP
 
  Example: python3 bipartiteLinearKit.py 2 small1976.txt pollinator plant 2
           #For generating cluster without any bipartite plot (to save tremendous amount of time)
